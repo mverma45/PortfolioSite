@@ -5,55 +5,65 @@ body {
 	background-color: #f4f4f4;
 	color: #333;
 }
+
 header {
 	background-color: #333;
 	color: #fff;
 	padding: 1rem 0;
 	text-align: center;
 }
-.container {
-	width: 80%;
-	margin: 0 auto;
-	overflow: hidden;
+
+.container,
+.containerPortfolio {
+	width: 70%;
+	margin: auto;
 }
+
 .nav {
 	display: flex;
 	justify-content: center;
 	padding: 0.5rem 0;
 }
+
 .nav a {
 	color: #fff;
 	text-decoration: none;
 	margin: 0 15px;
 	font-weight: bold;
 }
+
 .nav a:hover {
 	text-decoration: underline;
 }
+
 section {
 	padding: 2rem 0;
 }
+
 .section-title {
 	border-bottom: 2px solid #333;
 	padding-bottom: 0.5rem;
 	margin-bottom: 1rem;
 	font-size: 1.5rem;
 }
+
 footer {
 	background-color: #333;
 	color: #fff;
 	text-align: center;
-	padding: 1rem 2rem;
-	width: 100%;
+	padding: 1rem 0;
+	width: auto;
 }
+
 .contact-form input,
 .contact-form textarea {
-	width: 100%;
+	width: 80%;
 	padding: 0.5rem;
 	margin: 0.5rem 0;
 	border: 1px solid #ddd;
 	border-radius: 4px;
 }
+
 .contact-form button {
 	background-color: #333;
 	color: #fff;
@@ -62,6 +72,7 @@ footer {
 	border-radius: 4px;
 	cursor: pointer;
 }
+
 .contact-form button:hover {
 	background-color: #555;
 }
