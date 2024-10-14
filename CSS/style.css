@@ -7,7 +7,9 @@ body {
 		color 0.3s ease;
 }
 
-.darkMode {
+.darkModeToggle {
+	display: flex;
+	flex-direction: column;
 	background-color: black;
 	color: white;
 }
@@ -19,16 +21,61 @@ header {
 	text-align: center;
 }
 
-#toggle {
-	width: 7rem;
-	height: 2rem;
-	border-radius: 4rem;
+label {
+	width: 3rem;
+	height: 1.2rem;
+	position: relative;
+	display: block;
+	background: #ebebeb;
+	border-radius: 2rem;
+	box-shadow:
+		inset 0 2rem 2rem rgba(0, 0, 0, 0.4),
+		inset 0 2rem 2rem #ffffff;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+label:after {
+	content: '';
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: 0.125rem;
+	left: 0.125rem;
+	background: linear-gradient(#ffcc89, #d8860b);
+	border-radius: 8rem;
+	box-shadow: 0px 0.125rem 0.063rem rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+}
+
+label:active:after {
+	width: 1rem;
+}
+
+input {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+input:checked + label {
+	background: #242424;
+}
+
+input:checked + label:after {
+	left: 3rem;
+	transform: translateX(-100%);
+	background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
 .container,
 .containerPortfolio {
 	width: 70%;
 	margin: auto;
+}
+
+.containerPortfolio li {
+	list-style: url(/Images/metalmarious_Laptop.svg);
 }
 
 .nav {
@@ -52,8 +99,16 @@ section {
 	padding: 2rem 0;
 }
 
-.skills-title {
-	list-style: none;
+#darkModeToggle img {
+	width: 10%;
+	max-width: 1rem;
+	max-height: 1rem;
+}
+
+#skills img {
+	width: 100%;
+	max-width: 15rem;
+	max-height: 5rem;
 }
 
 .section-title {
