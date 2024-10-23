@@ -15,10 +15,24 @@ body {
 }
 
 header {
+	display: flex;
 	background-color: #333;
+	justify-content: center;
 	color: #fff;
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 	text-align: center;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 15px;
+	font-weight: bold;
+}
+
+header a:hover {
+	color: green;
+	transition: 0.9s ease;
 }
 
 label {
@@ -78,23 +92,6 @@ input:checked + label:after {
 	list-style: url(/Images/metalmarious_Laptop.svg);
 }
 
-.nav {
-	display: flex;
-	justify-content: center;
-	padding: 0.5rem 0;
-}
-
-.nav a {
-	color: #fff;
-	text-decoration: none;
-	margin: 0 15px;
-	font-weight: bold;
-}
-
-.nav a:hover {
-	text-decoration: underline;
-}
-
 section {
 	padding: 2rem 0;
 }
@@ -126,14 +123,6 @@ section {
 	font-size: 1.5rem;
 }
 
-footer {
-	background-color: #333;
-	color: #fff;
-	text-align: center;
-	padding: 1rem 0;
-	width: auto;
-}
-
 .contact-form input,
 .contact-form textarea {
 	width: 80%;
@@ -154,4 +143,11 @@ footer {
 
 .contact-form button:hover {
 	background-color: #555;
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+	width: auto;
 }
