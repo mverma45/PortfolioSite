@@ -88,12 +88,20 @@ input:checked + label:after {
 	margin: auto;
 }
 
+.containerPortfolio {
+	padding-bottom: 15rem;
+}
+
+#projects {
+	opacity: 2;
+}
+
 .containerPortfolio li {
-	list-style: url(/Images/metalmarious_Laptop.svg);
+	list-style: none;
 }
 
 section {
-	padding: 2rem 0;
+	padding: 0.75rem;
 }
 
 #darkModeToggle img {
@@ -148,6 +156,6 @@ footer {
 	background-color: #333;
 	color: #fff;
 	text-align: center;
-	padding: 1rem 0;
+	padding: 1rem;
 	width: auto;
 }
