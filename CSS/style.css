@@ -96,6 +96,21 @@ input:checked + label:after {
 	opacity: 2;
 }
 
+#projectsList {
+	display: flex;
+	flex-direction: column;
+}
+
+#projectsList a {
+	display: block;
+}
+
+#img: hover {
+}
+#repo {
+	margin-bottom: 2rem;
+}
+
 .containerPortfolio li {
 	list-style: none;
 }
