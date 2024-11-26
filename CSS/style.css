@@ -105,8 +105,13 @@ input:checked + label:after {
 	display: block;
 }
 
-#img: hover {
+#projectsList img:hover {
+	width: 5%;
+	width: 20rem;
+	max-height: 10rem;
+	transition: 0.07s;
 }
+
 #repo {
 	margin-bottom: 2rem;
 }
